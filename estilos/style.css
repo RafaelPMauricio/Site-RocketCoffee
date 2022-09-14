@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 792px) {
-    #burguerMenu{
-        display: none;
-    }
-}
+/* Estilização geral */
 
 :root {
     --backgrond: #000;
@@ -22,6 +18,7 @@
     text-decoration: none;
 }
 
+/* configurando cores e fonte em geral */
 body{
     background-color: var(--backgrond);
     font-family: 'Manrope', sans-serif;
@@ -48,6 +45,7 @@ a{
     top: 0;
 }
 
+/* desabilitando tags de telas menores */
 #blur-mobile{
     display: none;
 }
@@ -64,6 +62,7 @@ a{
     display: none;
 }
 
+/* configurando cabeçacho para telas medias a grandes */
 #header-desktop{
     max-width: 918px;
     margin: auto;
@@ -103,6 +102,7 @@ button.cafe:hover{
     cursor: pointer;
 }
 
+/* configurando conteúdo principal do site */
 main{
     max-width: 800px;
     margin: auto;

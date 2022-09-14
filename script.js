@@ -1,9 +1,10 @@
-
+/* variáveis para os elementos a serem modificados */
 let menuButton = document.getElementById('imageMenu')
 let main = document.getElementById('content')
 let menu = document.getElementById('burguerMenu')
 let menuOpen = false
 
+/* função para verificar se houve uma mudança de layout */
 window.onresize = function () {
     if(window.innerWidth > 791){
         menuButton.setAttribute('src', 'assets/menu-buguer-open.svg')
@@ -16,6 +17,7 @@ window.onresize = function () {
     }
 }
 
+/* função para abrir e fechar o menu mobile/telas pequenas */
 function burguerMenu(){
     menuOpen = !menuOpen
     if (!menuOpen){

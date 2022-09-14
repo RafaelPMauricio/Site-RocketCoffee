@@ -1,9 +1,17 @@
 @charset "UTF-8";
 
+/* estilização para versão mobile/telas pequenas */
+
+/* Desabilitando tags de telas maiores */
 #blur1, #blur2{
     display: none;
 }
 
+#header-desktop{
+    display: none;
+}
+
+/* habilitando e configurando tags para telas pequenas */
 #blur-mobile{
     display: block;
     position: fixed;
@@ -14,10 +22,7 @@
     z-index: -1;
 }
 
-#header-desktop{
-    display: none;
-}
-
+/* configurando cabeçalho de telas pequenas */
 #header-mobile{
     max-width: 700px;
     margin: auto;
@@ -35,6 +40,7 @@
     cursor: pointer;
 }
 
+/* configurando conteúdo exclusivo para telas pequenas */
 #main-mobile{
     display: block;
     margin: auto;
@@ -60,6 +66,7 @@ h1{
     font-size: 3.125rem;
 }
 
+/* configurando menu de telas pequenas */
 menu#burguerMenu{
     max-width: 791px;
     height: 285px;
