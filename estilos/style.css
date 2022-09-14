@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 792px) {
+    #burguerMenu{
+        display: none;
+    }
+}
+
 :root {
     --backgrond: #000;
     --text-color: #FFF;
@@ -42,16 +48,33 @@ a{
     top: 0;
 }
 
-header{
+#blur-mobile{
+    display: none;
+}
+
+#header-mobile{
+    display: none;
+}
+
+#main-mobile{
+    display: none;
+}
+
+#burguerMenu{
+    display: none;
+}
+
+#header-desktop{
     max-width: 918px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     margin-top: 50px;
 }
 
-ul{
+nav > ul{
     width: 431px;
     list-style-type: none;
     display: flex;
@@ -62,18 +85,20 @@ a:hover{
     border: 1px solid var(--border);
 }
 
-button{
+button.cafe{
     width: 172px;
     height: 37px;
-    background-color: var(--backgrond);
+    background-color: transparent;
     border: 1px solid var(--button);
     border-radius: 6px;
 
     color: white;
     font-weight: bold;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
 }
 
-button:hover{
+button.cafe:hover{
     background-color: var(--button);
     cursor: pointer;
 }
